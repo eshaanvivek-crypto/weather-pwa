@@ -1,0 +1,15 @@
+{
+  "name": "Simple Weather",
+  "short_name": "Weather",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#eff6ff",
+  "theme_color": "#2563eb",
+  "description": "A simple installable weather app.",
+  "icons": [{
+    "src": "icon.svg",
+    "sizes": "any",
+    "type": "image/svg+xml",
+    "purpose": "any maskable"
+  }]
+}

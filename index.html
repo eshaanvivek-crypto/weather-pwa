@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="description" content="A simple installable weather app." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <title>Simple Weather</title>
+</head>
+<body>
+  <main class="app-shell">
+    <section class="weather-card" aria-live="polite">
+      <p class="eyebrow">Simple Weather</p>
+      <h1>Today’s weather</h1>
+
+      <form id="search-form" class="search-form">
+        <label class="sr-only" for="city-input">Search for a city</label>
+        <input id="city-input" type="search" placeholder="Search a city" autocomplete="off" />
+        <button type="submit">Search</button>
+      </form>
+
+      <button id="location-button" class="location-button" type="button">Use my location</button>
+
+      <div id="status" class="status" role="status">Search for a city or use your location.</div>
+
+      <div id="weather" class="weather hidden">
+        <p id="location" class="location"></p>
+        <div class="current-weather">
+          <div id="weather-icon" class="weather-icon" aria-hidden="true">☀️</div>
+          <div>
+            <p id="temperature" class="temperature"></p>
+            <p id="condition" class="condition"></p>
+          </div>
+        </div>
+        <div class="details">
+          <div><span>High</span><strong id="high"></strong></div>
+          <div><span>Low</span><strong id="low"></strong></div>
+          <div><span>Wind</span><strong id="wind"></strong></div>
+        </div>
+        <p id="updated" class="updated"></p>
+      </div>
+    </section>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
